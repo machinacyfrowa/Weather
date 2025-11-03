@@ -38,9 +38,9 @@
             PressureTextBox = new TextBox();
             label3 = new Label();
             WindSpeedTextBox = new TextBox();
-            pictureBox1 = new PictureBox();
+            WMOPictureBox = new PictureBox();
             WMOLabel = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)WMOPictureBox).BeginInit();
             SuspendLayout();
             // 
             // TemperatureTextBox
@@ -123,13 +123,13 @@
             WindSpeedTextBox.Size = new Size(100, 23);
             WindSpeedTextBox.TabIndex = 8;
             // 
-            // pictureBox1
+            // WMOPictureBox
             // 
-            pictureBox1.Location = new Point(106, 153);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 100);
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
+            WMOPictureBox.Location = new Point(106, 153);
+            WMOPictureBox.Name = "WMOPictureBox";
+            WMOPictureBox.Size = new Size(100, 100);
+            WMOPictureBox.TabIndex = 10;
+            WMOPictureBox.TabStop = false;
             // 
             // WMOLabel
             // 
@@ -146,7 +146,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(305, 298);
             Controls.Add(WMOLabel);
-            Controls.Add(pictureBox1);
+            Controls.Add(WMOPictureBox);
             Controls.Add(label3);
             Controls.Add(WindSpeedTextBox);
             Controls.Add(label2);
@@ -160,7 +160,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)WMOPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,7 +177,7 @@
         private TextBox PressureTextBox;
         private Label label3;
         private TextBox WindSpeedTextBox;
-        private PictureBox pictureBox1;
+        private PictureBox WMOPictureBox;
         private Label WMOLabel;
     }
 }

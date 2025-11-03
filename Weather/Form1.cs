@@ -38,6 +38,10 @@ namespace Weather
                     string windSpeed = response.current.wind_speed_10m.ToString();
                     windSpeed += response.current_units.wind_speed_10m;
                     WindSpeedTextBox.Text = windSpeed;
+                    string conditionDescription = Forecast.GetDescription(response.current.weather_code);
+                    WMOLabel.Text = conditionDescription;
+                    string iconUrl = Forecast.GetIconUrl(response.current.weather_code);
+                    WMOPictureBox.Load(iconUrl);
                 }
             }
         }
