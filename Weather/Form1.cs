@@ -45,5 +45,10 @@ namespace Weather
                 }
             }
         }
+
+        private void wyjœcieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
