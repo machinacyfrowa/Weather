@@ -46,4 +46,5 @@ namespace Weather
             code = int.Parse(code.ToString().Substring(0, 1));
             return iconUrl[code];
         }
+    }
 }

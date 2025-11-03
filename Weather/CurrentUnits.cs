@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Weather
+{
+    /// <summary>
+    /// Klasa opisuje jednostki danych pogodowych dla aktualnej pogody otrzymywane z API Open-Meteo
+    /// </summary>
+    internal class CurrentUnits
+    {
+        public string time { get; set; }
+        public string interval { get; set; }
+        public string temperature_2m { get; set; }
+        public string weather_code { get; set; }
+        public string relative_humidity_2m { get; set; }
+        public string wind_speed_10m { get; set; }
+        public string precipitation { get; set; }
+        public string surface_pressure { get; set; }
+    }
+}
