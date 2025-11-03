@@ -28,12 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            TemperatureTextBox = new TextBox();
+            TemperatureLabel = new Label();
+            RainLabel = new Label();
+            RainTextBox = new TextBox();
+            label1 = new Label();
+            HumidityTextBox = new TextBox();
+            label2 = new Label();
+            PressureTextBox = new TextBox();
+            label3 = new Label();
+            WindSpeedTextBox = new TextBox();
+            pictureBox1 = new PictureBox();
+            WMOLabel = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // TemperatureTextBox
+            // 
+            TemperatureTextBox.Location = new Point(157, 8);
+            TemperatureTextBox.Name = "TemperatureTextBox";
+            TemperatureTextBox.Size = new Size(100, 23);
+            TemperatureTextBox.TabIndex = 0;
+            // 
+            // TemperatureLabel
+            // 
+            TemperatureLabel.AutoSize = true;
+            TemperatureLabel.Location = new Point(74, 11);
+            TemperatureLabel.Name = "TemperatureLabel";
+            TemperatureLabel.Size = new Size(77, 15);
+            TemperatureLabel.TabIndex = 1;
+            TemperatureLabel.Text = "Temperatura:";
+            // 
+            // RainLabel
+            // 
+            RainLabel.AutoSize = true;
+            RainLabel.Location = new Point(106, 40);
+            RainLabel.Name = "RainLabel";
+            RainLabel.Size = new Size(45, 15);
+            RainLabel.TabIndex = 3;
+            RainLabel.Text = "Opady:";
+            // 
+            // RainTextBox
+            // 
+            RainTextBox.Location = new Point(157, 37);
+            RainTextBox.Name = "RainTextBox";
+            RainTextBox.Size = new Size(100, 23);
+            RainTextBox.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(81, 69);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Wilgotność:";
+            // 
+            // HumidityTextBox
+            // 
+            HumidityTextBox.Location = new Point(157, 66);
+            HumidityTextBox.Name = "HumidityTextBox";
+            HumidityTextBox.Size = new Size(100, 23);
+            HumidityTextBox.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(13, 98);
+            label2.Name = "label2";
+            label2.Size = new Size(138, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Ciśnienie atmosferyczne:";
+            // 
+            // PressureTextBox
+            // 
+            PressureTextBox.Location = new Point(157, 95);
+            PressureTextBox.Name = "PressureTextBox";
+            PressureTextBox.Size = new Size(100, 23);
+            PressureTextBox.TabIndex = 6;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(57, 127);
+            label3.Name = "label3";
+            label3.Size = new Size(94, 15);
+            label3.TabIndex = 9;
+            label3.Text = "Prędkość wiatru:";
+            // 
+            // WindSpeedTextBox
+            // 
+            WindSpeedTextBox.Location = new Point(157, 124);
+            WindSpeedTextBox.Name = "WindSpeedTextBox";
+            WindSpeedTextBox.Size = new Size(100, 23);
+            WindSpeedTextBox.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(106, 153);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
+            // WMOLabel
+            // 
+            WMOLabel.Location = new Point(106, 256);
+            WMOLabel.Name = "WMOLabel";
+            WMOLabel.Size = new Size(100, 23);
+            WMOLabel.TabIndex = 11;
+            WMOLabel.Text = "label4";
+            WMOLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(305, 298);
+            Controls.Add(WMOLabel);
+            Controls.Add(pictureBox1);
+            Controls.Add(label3);
+            Controls.Add(WindSpeedTextBox);
+            Controls.Add(label2);
+            Controls.Add(PressureTextBox);
+            Controls.Add(label1);
+            Controls.Add(HumidityTextBox);
+            Controls.Add(RainLabel);
+            Controls.Add(RainTextBox);
+            Controls.Add(TemperatureLabel);
+            Controls.Add(TemperatureTextBox);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox TemperatureTextBox;
+        private Label TemperatureLabel;
+        private Label RainLabel;
+        private TextBox RainTextBox;
+        private Label label1;
+        private TextBox HumidityTextBox;
+        private Label label2;
+        private TextBox PressureTextBox;
+        private Label label3;
+        private TextBox WindSpeedTextBox;
+        private PictureBox pictureBox1;
+        private Label WMOLabel;
     }
 }
