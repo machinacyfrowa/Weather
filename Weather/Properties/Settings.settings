@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Weather.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="temperatureUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">fahrenheit</Value>
+    </Setting>
+    <Setting Name="rainfallUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">inch</Value>
+    </Setting>
+    <Setting Name="windSpeedUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ms</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

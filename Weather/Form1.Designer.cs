@@ -43,6 +43,17 @@
             menuStrip1 = new MenuStrip();
             aplikacjaToolStripMenuItem = new ToolStripMenuItem();
             wyjścieToolStripMenuItem = new ToolStripMenuItem();
+            jednostkiToolStripMenuItem = new ToolStripMenuItem();
+            temperaturaToolStripMenuItem = new ToolStripMenuItem();
+            TemperatureUnitCMenuItem = new ToolStripMenuItem();
+            TemperatureUnitFMenuItem = new ToolStripMenuItem();
+            opadyToolStripMenuItem = new ToolStripMenuItem();
+            RainfallMmMenuItem = new ToolStripMenuItem();
+            RainfallInchMenuItem = new ToolStripMenuItem();
+            prędkośćWiatruToolStripMenuItem = new ToolStripMenuItem();
+            kmhToolStripMenuItem = new ToolStripMenuItem();
+            msToolStripMenuItem = new ToolStripMenuItem();
+            mphToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)WMOPictureBox).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -146,7 +157,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { aplikacjaToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { aplikacjaToolStripMenuItem, jednostkiToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(314, 24);
@@ -163,9 +174,87 @@
             // wyjścieToolStripMenuItem
             // 
             wyjścieToolStripMenuItem.Name = "wyjścieToolStripMenuItem";
-            wyjścieToolStripMenuItem.Size = new Size(180, 22);
+            wyjścieToolStripMenuItem.Size = new Size(114, 22);
             wyjścieToolStripMenuItem.Text = "Wyjście";
             wyjścieToolStripMenuItem.Click += wyjścieToolStripMenuItem_Click;
+            // 
+            // jednostkiToolStripMenuItem
+            // 
+            jednostkiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { temperaturaToolStripMenuItem, opadyToolStripMenuItem, prędkośćWiatruToolStripMenuItem });
+            jednostkiToolStripMenuItem.Name = "jednostkiToolStripMenuItem";
+            jednostkiToolStripMenuItem.Size = new Size(68, 20);
+            jednostkiToolStripMenuItem.Text = "Jednostki";
+            // 
+            // temperaturaToolStripMenuItem
+            // 
+            temperaturaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TemperatureUnitCMenuItem, TemperatureUnitFMenuItem });
+            temperaturaToolStripMenuItem.Name = "temperaturaToolStripMenuItem";
+            temperaturaToolStripMenuItem.Size = new Size(180, 22);
+            temperaturaToolStripMenuItem.Text = "Temperatura";
+            // 
+            // TemperatureUnitCMenuItem
+            // 
+            TemperatureUnitCMenuItem.Checked = true;
+            TemperatureUnitCMenuItem.CheckState = CheckState.Checked;
+            TemperatureUnitCMenuItem.Name = "TemperatureUnitCMenuItem";
+            TemperatureUnitCMenuItem.Size = new Size(180, 22);
+            TemperatureUnitCMenuItem.Text = "C";
+            TemperatureUnitCMenuItem.Click += TemperatureUnitCMenuItem_Click;
+            // 
+            // TemperatureUnitFMenuItem
+            // 
+            TemperatureUnitFMenuItem.Name = "TemperatureUnitFMenuItem";
+            TemperatureUnitFMenuItem.Size = new Size(180, 22);
+            TemperatureUnitFMenuItem.Text = "F";
+            TemperatureUnitFMenuItem.Click += TemperatureUnitFMenuItem_Click;
+            // 
+            // opadyToolStripMenuItem
+            // 
+            opadyToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { RainfallMmMenuItem, RainfallInchMenuItem });
+            opadyToolStripMenuItem.Name = "opadyToolStripMenuItem";
+            opadyToolStripMenuItem.Size = new Size(180, 22);
+            opadyToolStripMenuItem.Text = "Opady";
+            // 
+            // RainfallMmMenuItem
+            // 
+            RainfallMmMenuItem.Checked = true;
+            RainfallMmMenuItem.CheckState = CheckState.Checked;
+            RainfallMmMenuItem.Name = "RainfallMmMenuItem";
+            RainfallMmMenuItem.Size = new Size(97, 22);
+            RainfallMmMenuItem.Text = "mm";
+            // 
+            // RainfallInchMenuItem
+            // 
+            RainfallInchMenuItem.Name = "RainfallInchMenuItem";
+            RainfallInchMenuItem.Size = new Size(97, 22);
+            RainfallInchMenuItem.Text = "inch";
+            // 
+            // prędkośćWiatruToolStripMenuItem
+            // 
+            prędkośćWiatruToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { kmhToolStripMenuItem, msToolStripMenuItem, mphToolStripMenuItem });
+            prędkośćWiatruToolStripMenuItem.Name = "prędkośćWiatruToolStripMenuItem";
+            prędkośćWiatruToolStripMenuItem.Size = new Size(180, 22);
+            prędkośćWiatruToolStripMenuItem.Text = "Prędkość wiatru";
+            // 
+            // kmhToolStripMenuItem
+            // 
+            kmhToolStripMenuItem.Checked = true;
+            kmhToolStripMenuItem.CheckState = CheckState.Checked;
+            kmhToolStripMenuItem.Name = "kmhToolStripMenuItem";
+            kmhToolStripMenuItem.Size = new Size(180, 22);
+            kmhToolStripMenuItem.Text = "km/h";
+            // 
+            // msToolStripMenuItem
+            // 
+            msToolStripMenuItem.Name = "msToolStripMenuItem";
+            msToolStripMenuItem.Size = new Size(180, 22);
+            msToolStripMenuItem.Text = "m/s";
+            // 
+            // mphToolStripMenuItem
+            // 
+            mphToolStripMenuItem.Name = "mphToolStripMenuItem";
+            mphToolStripMenuItem.Size = new Size(180, 22);
+            mphToolStripMenuItem.Text = "mph";
             // 
             // Form1
             // 
@@ -213,5 +302,16 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem aplikacjaToolStripMenuItem;
         private ToolStripMenuItem wyjścieToolStripMenuItem;
+        private ToolStripMenuItem jednostkiToolStripMenuItem;
+        private ToolStripMenuItem temperaturaToolStripMenuItem;
+        private ToolStripMenuItem TemperatureUnitCMenuItem;
+        private ToolStripMenuItem TemperatureUnitFMenuItem;
+        private ToolStripMenuItem opadyToolStripMenuItem;
+        private ToolStripMenuItem RainfallMmMenuItem;
+        private ToolStripMenuItem RainfallInchMenuItem;
+        private ToolStripMenuItem prędkośćWiatruToolStripMenuItem;
+        private ToolStripMenuItem kmhToolStripMenuItem;
+        private ToolStripMenuItem msToolStripMenuItem;
+        private ToolStripMenuItem mphToolStripMenuItem;
     }
 }
